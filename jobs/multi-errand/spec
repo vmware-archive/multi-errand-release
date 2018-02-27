@@ -1,0 +1,14 @@
+---
+name: multi-errand
+
+templates:
+  run.sh.erb: bin/run
+
+packages: []
+
+properties: 
+  errands:
+    description: "A list of shell scripts to execute, to be colocated with this errand"
+    default: 
+    - /var/vcap/jobs/install-service-catalog/bin/run
+    - /var/vcap/jobs/apply-specs/bin/run

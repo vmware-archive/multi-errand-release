@@ -1,0 +1,9 @@
+---
+name: multi-errand-ops-files
+
+templates:
+  multi-errand.yml: manifests/multi-errand.yml
+
+packages: []
+
+properties: {}

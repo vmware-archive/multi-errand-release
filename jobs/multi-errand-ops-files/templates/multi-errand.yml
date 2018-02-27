@@ -1,0 +1,12 @@
+- type: replace
+  path: /instance_groups/-
+  value:
+    stemcell: trusty
+    name: errands
+    jobs:
+      - name: multi-errand
+        release: multi-errand      
+      - name: apply-specs
+        release: kubo
+        properties:
+          addons-spec: ((addons-spec))
